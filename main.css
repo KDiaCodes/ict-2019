@@ -23,6 +23,7 @@ ul{
 }
 li{
   list-style: none;
+  position: center;
 }
 .displayflex{
   display: -webkit-box;
