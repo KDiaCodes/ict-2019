@@ -16,8 +16,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
 
     <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="time.js"></script>
+    <script src="backgrounds.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src=".js"></script>
+    <!-- script src=".js"></script -->
 
 </head>
 <body>
@@ -30,9 +33,19 @@
       <li class="left-nav"><a class="inactive" href="./docs/nani.html">What is discord.js</a></li>
 
     </ul>
-  </header>
+  </header> 
+  <div class="center_page">
+      <span class="time text-effect" id="time"></span>
+        <br>
+      <span class="time text-effect" id="date"></span>
+    </div>
   <div class="credits text-effect box">
     <a class="url" href="https://github.com/kdiacodes/ictnitton">Source Code</a>
   </div>
 </body>
+    <script type="text/javascript">
+    window.onload = date('date');
+    window.onload = time('time');
+    window.onload = randomBackground();
+  </script>
 </html>
