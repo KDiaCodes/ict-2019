@@ -15,7 +15,7 @@ li {
 }
 
 li.left-nav {
-    border-left:1px solid #bbb;
+    border-left:0.005px solid #bbb;
 }
 
 li a {
