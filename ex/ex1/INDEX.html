@@ -2,16 +2,36 @@
 <html>
 <head>
 <title>Chuvas</title>
+<script> console.log(vowel_count("The quick brown fox"));
+</script>
 </head>
 <body> 
 
-	<h1>Chuvas Acidas</h1>
+<script>
+	d
+</script>
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  <input type="button" onclick="vowel_count(fname)" value="Submit">
+</form>
 
-<ul>
+<script>
+function vowel_count(str1)
+{
+  var vowel_list = 'aeiouAEIOU';
+  var vcount = 0;
+  
+  for(var x = 0; x < str1.length ; x++)
+  {
+    if (vowel_list.indexOf(str1[x]) !== -1)
+    {
+      vcount += 1;
+    }
+  
+  }
+	document.getElementById("demo").innerHTML = vcount;
+}
+</script>
 
-	<li><h2><a href="O_que_são.html">O Que São? </a></h2></li>
-	<li><h2><a href="As_Consequencias_das_Chuvas_Acidas.html">As Consequencias das Chuvas Acidas</a></h2></li>
-	<li><h2><a href="O_que_podemos_fazer_para_evitar_chuvas_acidas.html">O que podemos fazer para evitar chuvas acidas</a></li>
-</ul>
 </body>
 </html>
