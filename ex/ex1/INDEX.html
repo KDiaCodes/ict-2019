@@ -5,7 +5,7 @@
 
 </head>
 <body> 
-<form id="frm1" action="/action_page.php">
+<form id="frm1" action="#" onsubmit="return vowel_count(fname);">
   First name: <input type="text" name="fname"><br>
   <input type="button" onclick="vowel_count(fname)" value="Submit">
 </form>
@@ -24,7 +24,7 @@ function vowel_count(str1)
     }
   
   }
-	document.getElementById("demo").innerHTML = vcount;
+	document.getElementById("frm1").innerHTML = vcount;
 }
 </script>
 
