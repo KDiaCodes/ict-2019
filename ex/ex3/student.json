@@ -1,7 +1,22 @@
 {
-  "David" : "80",
-  "Vincent" : "77",  
-  "Dinato": "88",
-  "Ingrid": "95",
-  "Thomas": "68"
+  "1":{
+    "name": "David",
+    "grade": "80"
+  }
+  "2":{
+    "name": "Vincent",
+    "grade": "77"
+  }  
+  "3":{
+    "name": "Dinato",
+    "grade": "88"
+  }
+  "4":{
+    "name": "Ingrid",
+    "grade": "95"
+  }
+  "5":{
+    "name": "Thomas",
+    "grade": "68"
+  }
 }
