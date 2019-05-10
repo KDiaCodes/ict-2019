@@ -14,6 +14,8 @@
 <script>
 count = function(a, b) {
   //var a=document.getElementById("t");
+  a = parseInt(a);
+  b = parseInt(b);
   console.log(a); //to see input string on console
   console.log(b); //calculated length of string
   if (a > b) {document.getElementById("p").innerText = `${a} is larger than ${b}`;}
