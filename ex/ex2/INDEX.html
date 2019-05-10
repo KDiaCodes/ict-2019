@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chuvas</title>
 
+</head>
+<body> 
+<p>count of vowels </p>
+<p id="p"></p>
+<input id="t" /></br>
+<input id="y" />
+<input type="button" value="count" onclick="count(t.value, y.value)" />
+
+<script>
+count = function(a, b) {
+  //var a=document.getElementById("t");
+  console.log(a); //to see input string on console
+  console.log(b); //calculated length of string
+  if (a > b) {document.getElementById("p").innerText = `${a} is larger than ${b}`;}
+  else if (b > a) {document.getElementById("p").innerText = `${b} is larger than ${a}`;}
+  else if (a == b) {document.getElementById("p").innerText = `${a} and ${b} are equal`;}
+  else {return;}
+  
+}
+</script>
+
+</body>
+</html>
