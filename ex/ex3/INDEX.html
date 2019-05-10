@@ -5,25 +5,22 @@
 
 </head>
 <body> 
-<p>please input two numbers</p>
+<p>please press the button for the grades.</p>
 <p id="p"></p>
-<input id="t" /></br>
-<input id="y" />
-<input type="button" value="count" onclick="count(t.value, y.value)" />
+
+<input type="button" value="count" onclick="count()" />
 
 <script>
-count = function(a, b) {
-  //var a=document.getElementById("t");
-  a = parseInt(a);
-  b = parseInt(b);
-  console.log(a); //to see input string on console
-  console.log(b); //calculated length of string
-  if (a > b) {document.getElementById("p").innerText = `${a} is larger than ${b}`;}
-  else if (b > a) {document.getElementById("p").innerText = `${b} is larger than ${a}`;}
-  else if (a == b) {document.getElementById("p").innerText = `${a} and ${b} are equal`;}
-  else {return;}
+const config = require("./config.json");
   
+function grade() {
+  for (i = 0; i < 5; i++) {
+    console.log(config.i)
+    document.getElementById("p").innerText = `${config.i}`;
+  }
+
 }
+  
 </script>
 
 </body>
