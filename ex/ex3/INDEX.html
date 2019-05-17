@@ -11,16 +11,30 @@
 <input type="button" value="count" onclick="count()" />
 
 <script>
-const config = require("./config.json");
-  
-function grade() {
-  for (i = 0; i < 5; i++) {
-    console.log(config.i)
-    document.getElementById("p").innerText = `${config.i}`;
-  }
+var Grades = [80, 77, 88, 95, 68, 69];
 
+ 
+for (i = 0; i < Grades.length; i++) { 
+  document.getElementById("p").innerText += avg(Grades[i]) + "<br>";
 }
   
+funtion avg (grade){
+  if (grade >= 90) {
+    return "A";
+  } 
+  else if (grade >= 80) {
+    return "B";
+  }
+  else if (grade >= 70) {
+    return "C";
+  }
+  else if (grade >= 60) {
+    return "D";
+  }
+  else if (grade < 60) {
+    return "F";
+  }
+}  
 </script>
 
 </body>
