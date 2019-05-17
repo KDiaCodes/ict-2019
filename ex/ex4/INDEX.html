@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chuvas</title>
+
+</head>
+<body> 
+<p>please press to see the date</p>
+<p id="p"></p>
+
+<input type="button" value="Date!" onclick="date('p')" />
+
+<script>
+function date(id) {
+  var date = new Date;
+  d = date.getDate();
+  year = date.getFullYear();
+  month = date.getMonth();
+  result = `${d}/${month}/${year} <br>`;
+  result += `${d}-${month}-${year}`;
+  document.getElementById(id).innerHTML = result;
+  return true;
+}
+</script>
+
+</body>
+</html>
