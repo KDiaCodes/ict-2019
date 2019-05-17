@@ -8,17 +8,33 @@
 <p>please press the button for the grades.</p>
 <p id="p"></p>
 
-<input type="button" value="count" onclick="count()" />
+<input type="button" value="Click me!" onclick="showGrade()" />
 
 <script>
-var Grades = [80, 77, 88, 95, 68, 69];
 
- 
+
+var graad = "";
+
+function showGrade() { 
+
+
+var Grades = [80, 77, 88, 95, 68];
+let sum = Grades.reduce((previous, current) => current += previous);
+let avGMark = sum / Grades.length;
+var Student = ["David", "Vincent", "Dinato", "Ingrid", "Thomas"]
 for (i = 0; i < Grades.length; i++) { 
-  document.getElementById("p").innerText += avg(Grades[i]) + "<br>";
+  graad += Student[i] + ": " + avg(Grades[i]) + " <br> "; 
+}
+graad += "Average: " + avg(avGMark) + " <br> ";
+
+
+
+document.getElementById("p").innerHTML = graad
+
+
 }
   
-funtion avg (grade){
+function avg(grade){
   if (grade >= 90) {
     return "A";
   } 
